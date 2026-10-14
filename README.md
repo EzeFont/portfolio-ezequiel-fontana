@@ -24,4 +24,4 @@ Abrí `index.html` directamente en un navegador o ejecutalo con la extensión **
 
 ## Sitio publicado
 
-Enlace: [pendiente, lo completo después].
+Enlace: https://ezefont.github.io/portfolio-ezequiel-fontana/.
