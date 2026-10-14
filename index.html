@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio personal de Ezequiel Fontana, estudiante de desarrollo de software y desarrollador web.">
+  <title>Portfolio | Ezequiel Fontana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="EF. - Ezequiel Fontana, ir al inicio">EF<span>.</span></a>
+      <button class="icon-button menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero container" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Disponible para aprender y colaborar</p>
+        <h1 id="hero-title">Hola, soy<br><span class="highlight">Ezequiel Fontana.</span></h1>
+        <p class="hero-intro">Estudiante de desarrollo web con curiosidad por crear experiencias digitales claras, accesibles y útiles.</p>
+        <a class="button button-primary" href="#proyectos">Explorar proyectos <span aria-hidden="true">↘</span></a>
+      </div>
+      <figure class="hero-art">
+        <img src="img/perfil-simple.svg" alt="Ilustración simple de una persona">
+      </figure>
+    </section>
+
+    <section class="about section-block" id="sobre-mi" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div>
+          <h2 id="about-title">Sobre mí</h2>
+        </div>
+        <div class="about-copy">
+          <p>Soy estudiante de GPI en INCADE</p>
+          <div class="about-details">
+            <div>
+              <h3>Formación</h3>
+              <ul class="about-list">
+                <li><strong>Técnico Superior en Gestión en Programacón e Innovación Tecnológica y Digital</strong><span>INCADE · En curso</span></li>
+                <li><strong>Secundario</strong><span>Escuala de Comercio Nº11 · [Terminado]</span></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Intereses</h3>
+              <ul class="about-list interest-list">
+                <li>Desarrollo de software</li>
+              </ul>
+            </div>
+          </div>
+          <div class="education-note"><span class="note-marker" aria-hidden="true">✳</span><p><strong>Mi objetivo</strong><br>Seguir creciendo como desarrollador y construir productos digitales.</p></div>
+        </div>
+      </div>
+      <div class="container skills">
+        <h3>Herramientas en mi caja</h3>
+        <ul class="skill-list" aria-label="Habilidades y tecnologías">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Java</li><li>SQL Server</li><li>Firebase</li><li>Android Studio</li><li>Git &amp; GitHub</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="projects section-block container" id="proyectos" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">02 — Trabajo seleccionado</p><h2 id="projects-title">Proyectos<span class="highlight">.</span></h2></div>
+      </div>
+      <div class="filter-bar" role="group" aria-label="Filtrar proyectos por categoría">
+        <button class="filter-button is-active" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+        <button class="filter-button" type="button" data-filter="escritorio" aria-pressed="false">Escritorio</button>
+        <button class="filter-button" type="button" data-filter="mobile" aria-pressed="false">Mobile</button>
+      </div>
+      <div class="project-grid" id="project-grid">
+        <article class="project-card" data-category="escritorio">
+          <a class="project-image" href="https://github.com/Lulo-specter/TP-Poo-Final" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto Registro de balanza para yerbatera (se abre en una pestaña nueva)">
+            <img class="project-main-image" src="img/proyecto-yerbatera.png" alt="Pantalla principal del sistema de registro de pesaje para yerbatera">
+            <span class="image-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="project-thumbnails" role="group" aria-label="Galería de Registro de balanza para yerbatera">
+            <button class="project-thumbnail is-active" type="button" data-image-src="img/proyecto-yerbatera.png" data-image-alt="Pantalla principal del sistema de registro de pesaje para yerbatera" aria-label="Ver pantalla principal del sistema" aria-pressed="true"><img src="img/proyecto-yerbatera.png" alt="Pantalla principal del sistema de registro de pesaje para yerbatera"></button>
+            <button class="project-thumbnail" type="button" data-image-src="img/proyecto-yerbatera-recibo.png" data-image-alt="Recibo de pesada con cupón, productor, peso bruto, tara, descuento y peso neto" aria-label="Ver recibo de pesada" aria-pressed="false"><img src="img/proyecto-yerbatera-recibo.png" alt="Recibo de pesada con cupón, productor, peso bruto, tara, descuento y peso neto"></button>
+          </div>
+          <div class="project-meta"><span>01 / ESCRITORIO</span><span>2026</span></div>
+          <h3>Registro de balanza para yerbatera</h3>
+          <p>Sistema que registra el pesaje de camiones de productores de yerba mate: fecha, número de cupón, productor, peso bruto, tara, descuento por palo o condición de la yerba, peso neto y remito. Imprime el cupón en dos copias: una para el proveedor y otra para la yerbatera.</p>
+          <p class="project-clarification">Trabajo práctico de la carrera.</p>
+          <ul class="tag-list" aria-label="Tecnologías utilizadas"><li>Java</li><li>SQL Server</li></ul>
+          <a class="text-link" href="https://github.com/Lulo-specter/TP-Poo-Final" target="_blank" rel="noopener noreferrer">Ver código <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="project-card" data-category="mobile">
+          <a class="project-image" href="https://github.com/AndresP573/VitalHome" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto VitalHome (se abre en una pestaña nueva)">
+            <img class="project-main-image" src="img/proyecto-vitalhome.png" alt="Pantalla principal de la aplicación móvil VitalHome">
+            <span class="image-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="project-thumbnails" role="group" aria-label="Galería de VitalHome">
+            <button class="project-thumbnail is-active" type="button" data-image-src="img/proyecto-vitalhome.png" data-image-alt="Pantalla principal de la aplicación móvil VitalHome" aria-label="Ver pantalla principal de VitalHome" aria-pressed="true"><img src="img/proyecto-vitalhome.png" alt="Pantalla principal de la aplicación móvil VitalHome"></button>
+            <button class="project-thumbnail" type="button" data-image-src="img/proyecto-vitalhome-contactos.png" data-image-alt="Pantalla de VitalHome con contactos de cuidadores y familiares" aria-label="Ver contactos de cuidadores y familiares" aria-pressed="false"><img src="img/proyecto-vitalhome-contactos.png" alt="Pantalla de VitalHome con contactos de cuidadores y familiares"></button>
+          </div>
+          <div class="project-meta"><span>02 / MOBILE</span><span>2026</span></div>
+          <h3>VitalHome</h3>
+          <p>App móvil de domótica para el cuidado de adultos mayores, con inicio de sesión como adulto mayor o como cuidador/familiar. El adulto mayor puede usar el botón SOS, recibir alertas de caída, fuego, pulso y apertura de puerta, y consultar recordatorios de medicamentos. El cuidador asigna medicamentos y recibe notificaciones de caídas y horarios de medicación.</p>
+          <p class="project-clarification">Proyecto grupal.</p>
+          <ul class="tag-list" aria-label="Tecnologías utilizadas"><li>Java</li><li>Firebase</li><li>Android</li></ul>
+          <a class="text-link" href="https://github.com/AndresP573/VitalHome" target="_blank" rel="noopener noreferrer">Ver código <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>No hay proyectos en esta categoría todavía.</p>
+    </section>
+
+    <section class="contact section-block" id="contacto" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <h2 id="contact-title">Contacto</h2>
+          <p>Si querés escribirme, completá el formulario o mandame un email.</p>
+          <a class="email-link" href="mailto:Fontanaezequiel555@gmail.com">Fontanaezequiel555@gmail.com</a>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-field">
+            <label for="name">Nombre</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="¿Cómo te llamás?" required minlength="2">
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="nombre@correo.com" required>
+          </div>
+          <div class="form-field">
+            <div class="label-row"><label for="message">Mensaje</label><span id="character-count">0 / 300</span></div>
+            <textarea id="message" name="message" rows="4" maxlength="300" placeholder="Contame un poco..." required minlength="10" aria-describedby="character-count"></textarea>
+          </div>
+          <button class="button button-primary submit-button" type="submit">Enviar mensaje</button>
+          <p class="form-notice" id="form-notice" role="status" aria-live="polite">Completá los campos y presioná Enviar mensaje.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#inicio" aria-label="EF. - Ezequiel Fontana, ir al inicio">EF<span>.</span></a>
+      <p>Hecho con curiosidad y mucho café. <span id="current-year"></span></p>
+      <div class="footer-links">
+        <a href="https://github.com/EzeFont" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a href="#inicio">Volver arriba ↑</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
