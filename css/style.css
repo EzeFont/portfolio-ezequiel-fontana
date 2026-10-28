@@ -68,7 +68,7 @@ h1, h2 { margin-bottom: 1.25rem; font-size: clamp(2.7rem, 6vw, 5.4rem); font-wei
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 2rem; margin-bottom: 2rem; }
 .section-heading h2 { margin-bottom: 0; font-size: clamp(2.8rem, 5vw, 4.25rem); }
 .section-heading > p { max-width: 320px; margin-bottom: .4rem; color: var(--muted); font-size: .9rem; }
-.filter-bar { display: flex; gap: .5rem; margin-bottom: 1.6rem; }
+.filter-bar { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.6rem; }
 .filter-button { padding: .45rem .85rem; border: 1px solid var(--line); background: transparent; color: var(--muted); cursor: pointer; font-size: .75rem; }
 .filter-button.is-active { border-color: var(--accent); background: var(--accent); color: var(--accent-ink); }
 .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; align-items: stretch; }
@@ -90,6 +90,20 @@ h1, h2 { margin-bottom: 1.25rem; font-size: clamp(2.7rem, 6vw, 5.4rem); font-wei
 .tag-list li { padding: .28rem .5rem; font-size: .59rem; }
 .text-link { display: inline-flex; gap: .6rem; margin-top: auto; padding-top: 1rem; color: var(--accent); font-size: .76rem; font-weight: 700; }
 .empty-state { margin: 1.5rem 0 0; color: var(--muted); font-size: .76rem; }
+.project-admin-dialog { width: min(92vw, 620px); max-height: 85vh; padding: 1.25rem; border: 1px solid var(--line); background: var(--surface); color: var(--text); }
+.project-admin-dialog::backdrop { background: rgb(0 0 0 / 65%); }
+.project-admin-content { max-height: calc(85vh - 2.5rem); overflow-y: auto; }
+.project-admin-heading { display: flex; align-items: start; justify-content: space-between; gap: 1rem; margin-bottom: 1.2rem; }
+.project-admin-heading h2 { margin: 0; font-size: 1.5rem; letter-spacing: -.04em; }
+.project-admin-form { display: grid; gap: .9rem; }
+.project-admin-form .form-field { display: grid; gap: .35rem; }
+.project-admin-form select { width: 100%; padding: .7rem .8rem; border: 1px solid var(--line); border-radius: 0; background: var(--page); color: var(--text); font: inherit; }
+.project-admin-form .submit-button { justify-self: start; cursor: pointer; }
+.project-admin-list { display: grid; gap: .65rem; margin-top: 1.5rem; }
+.project-admin-item { display: flex; align-items: center; justify-content: space-between; gap: .75rem; padding-top: .65rem; border-top: 1px solid var(--line); }
+.project-admin-item p { margin: 0; color: var(--muted); font-size: .76rem; }
+.project-admin-actions { display: flex; gap: .5rem; }
+.project-admin-actions button { padding: .35rem .55rem; }
 .contact { background: var(--surface); }
 .contact-grid { display: grid; width: min(100% - 3rem, 600px); gap: 1.5rem; }
 .contact h2 { margin-bottom: .75rem; font-size: clamp(2rem, 4vw, 3rem); letter-spacing: normal; }
@@ -133,6 +147,7 @@ h1, h2 { margin-bottom: 1.25rem; font-size: clamp(2.7rem, 6vw, 5.4rem); font-wei
   .hero { padding-top: 3.5rem; }
   h1 { font-size: clamp(2.7rem, 14vw, 4rem); }
   .project-grid { grid-template-columns: 1fr; }
+  .project-admin-item { align-items: flex-start; flex-direction: column; }
   .footer-inner { min-height: 110px; flex-wrap: wrap; justify-content: space-between; padding-block: 1.2rem; }
   .footer-inner p { order: 1; width: 100%; }
 }
